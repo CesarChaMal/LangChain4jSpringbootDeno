@@ -1,0 +1,12 @@
+#javac src/main/java/com/ai/langchain4j/*.java
+#javac -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar src/main/java/com/ai/langchain4j/*.java
+mvn -Pcomplete clean install
+
+java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.HelloWorld
+java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.ServiceExample
+java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.ResponseWithStreaming
+
+
+
+
+
