@@ -1,12 +1,10 @@
+sdk use java 22.0.1.fx-zulu
+
 #javac src/main/java/com/ai/langchain4j/*.java
 #javac -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar src/main/java/com/ai/langchain4j/*.java
 mvn -Pcomplete clean install
 
-java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.HelloWorld
-java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.ServiceExample
-java -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar com.ai.langchain4j.ResponseWithStreaming
+mvn spring-boot:run
+mvn spring-boot:run -Dspring-boot.run.arguments=--debug
 
-
-
-
-
+java -cp langchain4jspringbootdemo-0.1-SNAPSHOT-jar-with-dependencies.jar

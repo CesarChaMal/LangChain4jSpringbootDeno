@@ -3,7 +3,8 @@ package com.ai.langchain4j.views;
 import com.vaadin.flow.component.messages.MessageInput;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
-import dev.tpcoder.devassist.service.ChatService;
+//import dev.tpcoder.devassist.service.ChatService;
+import com.ai.langchain4j.service.ChatService;
 import org.vaadin.firitin.components.messagelist.MarkdownMessage;
 import org.vaadin.firitin.components.messagelist.MarkdownMessage.Color;
 
