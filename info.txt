@@ -2,9 +2,11 @@ sdk use java 22.0.1.fx-zulu
 
 #javac src/main/java/com/ai/langchain4j/*.java
 #javac -cp target/langchain4jdemo-0.1-SNAPSHOT-jar-with-dependencies.jar src/main/java/com/ai/langchain4j/*.java
-mvn -Pcomplete clean install
+mvn clean install
+mvn -Pproduction clean package
+mvn -Pproduction clean package -Dvaadin.forceProductionBuild
 
 mvn spring-boot:run
 mvn spring-boot:run -Dspring-boot.run.arguments=--debug
 
-java -cp langchain4jspringbootdemo-0.1-SNAPSHOT-jar-with-dependencies.jar
+java -jar target/langchain4jspringbootdemo-0.1-SNAPSHOT.jar
